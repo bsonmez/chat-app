@@ -2,20 +2,21 @@
   "name": "chat-app",
   "author": "Burak Sonmez",
   "version": "1.0.0",
-  "description": "",
+  "description": "A chat applicaiton made by using MeteorJS and ReactJs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "chat",
+		"chat",
+		"application",
     "js",
     "react",
     "meteor"
   ],
   "repository": {
     "type": "git",
-    "url": "git://"
+    "url": "git://github.com/bsonmez/chat-app"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
