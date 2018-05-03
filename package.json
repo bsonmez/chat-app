@@ -1,6 +1,6 @@
 {
-	"name": "chat-app",
-	"author": "Burak Sonmez",
+  "name": "chat-app",
+  "author": "Burak Sonmez",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-		"chat",
-		"js",
+    "chat",
+    "js",
     "react",
     "meteor"
   ],
