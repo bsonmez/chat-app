@@ -1,0 +1,170 @@
+/* --------------- Common --------------- */
+    html, body {
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+        color: black;
+        line-height: normal;
+        font-family: 'Roboto', sans-serif;
+    }
+    .display-none { display: none; }
+    .display-block { display: block; }
+    .float-left { float: left; }
+    .float-right { float: right; }
+    .width100 { width: 100%; }
+    .p0 { padding: 0 !important; }
+    .mt1 { margin-top: 1rem; }
+    .mr1 { margin-right: 1rem; }
+/* --------------- / Common --------------- */
+
+/* --------------- Typography --------------- */
+    a { text-decoration: none; color: black; }
+    .tx-center { text-align: center; }
+    .tx-uppercase { text-transform: uppercase; }
+    .tx-underlined { text-decoration: underline; }
+    .tx-italic { font-style: italic; }
+    /* size */
+        .tx-xs { font-size: 12px; }
+        .tx-sm { font-size: 14px; }
+        .tx-md { font-size: 18px; }
+        .tx-lg { font-size: 22px; }
+        .tx-xl { font-size: 28px; }
+    /* thickness */
+        .tx-thin { font-weight: 100; }
+        .tx-light { font-weight: 200; }
+        .tx-lighter { font-weight: 300; }
+        .tx-bold { font-weight: 500; }
+        .tx-bolder { font-weight: 700; }
+    /* colors */
+        .tx-grey {
+            color: grey;
+        }
+    /* fonts */
+        .font-handwriting {
+            font-family: 'Handlee', cursive;
+        }
+/* --------------- / Typography --------------- */
+
+/* --------------- Content --------------- */
+    /* vertical align */
+        .vertical-align {
+            display: table;
+            height: 100%;
+            width: 100%;
+            margin: 0 !important;
+        }
+        .vertical-align .vertical-align-child {
+            display: table-cell;
+            vertical-align: middle;
+            float: none;
+            height: 100%;
+            width: 100%;
+        }
+
+    /* header */
+        header {
+            border-bottom: 1px solid #f3f3f3;
+            padding: 1rem;
+            height: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        header .header-icon i {
+            font-size: 2rem;
+        }
+
+    /* menus */
+        /* primary */
+            .menu-primary {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .menu-primary li a {
+                display: block;
+                padding: 1rem;
+            }
+            .menu-primary li a:hover, .menu-primary li a.active {
+                background-color: #f3f3f3;
+            }
+            .menu-primary li a i {
+                float: left;
+                font-size: 1.3rem;
+                line-height: 1.3rem;
+                margin-right: 10px;
+            }
+        /* secondary */
+            .menu-secondary {
+                position: relative;
+            }
+            .menu-secondary ul {
+                position: absolute;
+                top: 1rem;
+                right: 0;
+                margin: 1rem 0 0 0;
+                padding: 0.5rem 1rem;
+                list-style: none;
+                background-color: #f3f3f3;
+            }
+            .menu-secondary ul li a {
+                display: block;
+                padding: 0.5rem 1rem;
+            }
+            .menu-secondary-overlay {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+
+    /* card */
+        .card {
+            border: 1px solid #f3f3f3;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        .card.active, .card:hover {
+            background-color: #f3f3f3;
+        }
+        .card .card-header {
+            font-weight: 500;
+            padding-bottom: 0.3rem;
+        }
+        .card .card-body {
+            padding: 0.3rem 0;
+        }
+        .card .card-footer {
+            font-weight: 300;
+            font-size: 0.75rem;
+            padding-top: 0.3rem;
+        }
+
+    /* list */
+        .list {
+            border: 1px solid #f3f3f3;
+            padding: 1rem;
+        }
+        .list .list-body {
+            padding: 0.3rem 0;
+            font-size: 1.1rem;
+        }
+        .list .list-footer {
+            font-weight: 300;
+            font-size: 0.75rem;
+            padding-top: 0.3rem;
+        }
+
+    /* chats */
+        .chat-room-header {
+            border-bottom: 1px solid #f3f3f3;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+    /* alert */
+        .alert.alert-danger {
+            color: red;
+        }
+/* --------------- / Content --------------- */
