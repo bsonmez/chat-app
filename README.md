@@ -1,6 +1,10 @@
 # Chat Application
 
-A chat application made by using MeteorJs and ReactJs 
+A one-to-one application made by using MeteorJs and ReactJs.
+
+- [x] One-to-One
+- [ ] Group Chatting
+
 
 ## Running
 
