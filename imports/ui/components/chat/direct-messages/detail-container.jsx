@@ -11,31 +11,31 @@ import DirectMessageDetail from './detail';
 // Direct Message Detail Container
 const DirectMessageDetailContainer = createContainer((props) => {
 
-    const usersAllLoaded = Meteor.subscribe('users-all-publication').ready();
-    const usersAll = Meteor.users.find({ _id: { $ne: Meteor.userId() } }, { sort: { createdAt: -1 }}).fetch();
+	const usersAllLoaded = Meteor.subscribe('users-all-publication').ready();
+	const usersAll = Meteor.users.find({ _id: { $ne: Meteor.userId() } }, { sort: { createdAt: -1 } }).fetch();
 
-    const chatRoomLoaded = Meteor.subscribe('chat-room-publication', props.params.chatRoomId).ready();
-    const chatRoom = ChatRooms.findOne(props.params.chatRoomId);
+	const chatRoomLoaded = Meteor.subscribe('chat-room-publication', props.params.chatRoomId).ready();
+	const chatRoom = ChatRooms.findOne(props.params.chatRoomId);
 
-    const chatsLoaded = Meteor.subscribe('chats-publication', props.params.chatRoomId).ready();
-    const chats = Chats.find({ chatRoomId: props.params.chatRoomId }, { sort: { createdAt: 1 }}).fetch();
-    chats.forEach((chat, i) => {
-        chats[i].user = Meteor.users.findOne(chat.userId, { fields: { _id: 1, username: 1 }});
-    });
+	const chatsLoaded = Meteor.subscribe('chats-publication', props.params.chatRoomId).ready();
+	const chats = Chats.find({ chatRoomId: props.params.chatRoomId }, { sort: { createdAt: 1 } }).fetch();
+	chats.forEach((chat, i) => {
+		chats[i].user = Meteor.users.findOne(chat.userId, { fields: { _id: 1, username: 1 } });
+	});
 
 
-    return {
-        usersAllLoaded,
-        usersAll,
+	return {
+		usersAllLoaded,
+		usersAll,
 
-        chatRoomLoaded,
-        chatRoom,
+		chatRoomLoaded,
+		chatRoom,
 
-        chatsLoaded,
-        chats,
+		chatsLoaded,
+		chats,
 
-        user:  Meteor.user() ? Meteor.user() : {}
-    };
+		user: Meteor.user() ? Meteor.user() : {}
+	};
 }, DirectMessageDetail);
 
 // Finally, export the Container
