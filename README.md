@@ -2,7 +2,15 @@
 
 A chat application made by using MeteorJs and ReactJs 
 
-## Packages 
+## Running
+
+- Install Meteor `curl https://install.meteor.com/ | sh` (if you haven't already)
+- Clone repo `git clone https://github.com/bsonmez/chat-app.git` and `cd chat-app`
+- Install NPM modules `npm install`
+- Run Meteor `meteor`
+
+#
+## Packages
 
 ### Meteor (atmospherejs)
 - **accounts-password** 
