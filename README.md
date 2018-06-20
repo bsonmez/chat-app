@@ -5,6 +5,7 @@ A one-to-one application made by using MeteorJs and ReactJs.
 - [x] One-to-One
 - [ ] Group Chatting
 
+PS: A logic error is left **intentionally**. You can try to solve it :)
 
 ## Running
 
